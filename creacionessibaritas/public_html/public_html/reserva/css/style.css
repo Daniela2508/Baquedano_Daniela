@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+    font-family: 'fontSibarita';
+    src: url("../../recursos/tip/fontSibarita.ttf");
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../../recursos/fondoOpaco.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.menu{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2vh;
+    margin-left: 2vh;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 30px;
+    font-family: "fontSibarita";
+    color: white;
+}
+
+.menu a:hover{
+    color: rgb(240, 226, 147);
+}
+
+.wrapperLogo{
+    margin-left: 8%;
+}
+
+.textoLogo{ /*Esto es nuestro logo usando h1, font-family, etc.*/
+    color: white;
+    font-family: "fontSibarita", sans-serif;
+    font-weight: 100;
+    width: 100%;
+}
+
+.wrapperLogo h1{
+    text-align: center;
+    font-size: 11vh;
+}
+
+.reservaForm{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    padding-right: 60px;
+}
+
+.select-contenedor{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 40px;
+    height: 50px;
+}
+
+.input-caja{
+    text-align: left;
+    border: none;
+    appearance: none;
+    padding: 0 30px 20px 15px;
+    width: 100%;
+    color: white;
+    background: transparent;
+    font-size: 16px;
+}
+
+.input-caja::placeholder{
+    color: white;
+}
+
+.select-caja{
+    text-align: left;
+    border: none;
+    appearance: none;
+    padding: 0 30px 0 15px;
+    width: 100%;
+    color: white;
+    background: transparent;
+    font-size: 16px;
+}
+
+.reservaForm .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-left: 2%;
+    margin-top: 4vh;
+}
+
+.reservaForm .link-registro{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.link-registro p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link-registro p a:hover {
+    text-decoration: underline;
+}
+
+
+/*Pantalla en 482px pequeño */
+@media only screen and (max-width: 482px){
+
+    .menu a{
+        text-decoration: none;
+        padding: 14px 16px;
+        font-size: 25px;
+        font-family: "fontSibarita";
+        color: rgb(240, 226, 147);
+    }
+    
+}
+
+@media only screen and (max-width: 441px){
+    .menu a{
+        text-decoration: none;
+        padding: 14px 16px;
+        font-size: 20.5px;
+        font-family: "fontSibarita";
+        color: rgb(240, 226, 147);
+    }
+}
+
+@media only screen and (max-width: 403px){
+    .menu a{
+        text-decoration: none;
+        padding: 14px 16px;
+        font-size: 36px;
+        font-family: fontSibarita;
+        color: rgb(240, 226, 147);
+    }
+
+    .caja-input i{
+        position: absolute;
+        margin-left: 73%;
+        font-size: 20px;   
+        transform: translateY(-230%);
+    }
+}
+
+@media only screen and (max-width: 380px){
+
+    .reservaForm .recuerdame-contraseniaForgot{
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        margin: 50px 0 30px 0;
+    }
+}
+
+@media only screen and (max-width: 329px){
+    .menu a{
+        text-decoration: none;
+        padding: 14px 16px;
+        font-size: 30px;
+        font-family: fontSibarita;
+        color: rgb(240, 226, 147);
+    }
+
+    .caja-input i{
+        position: absolute;
+        margin-left: 70%;
+        font-size: 20px;   
+        transform: translateY(-230%);
+    }
+
+    .reservaForm .recuerdame-contraseniaForgot{
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+        margin: 50px 0 30px 0;
+    }
+}
+
+@media only screen and (max-width: 304px){
+    .menu a{
+        text-decoration: none;
+        padding: 14px 16px;
+        font-size: 24px;
+        font-family: fontSibarita;
+        color: rgb(240, 226, 147);
+    }
+
+    .caja-input i{
+        position: absolute;
+        margin-left: 67%;
+        font-size: 20px;   
+        transform: translateY(-230%);
+    }
+
+    .reservaForm .recuerdame-contraseniaForgot{
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        margin: 50px 0 30px 0;
+    }
+}
+
